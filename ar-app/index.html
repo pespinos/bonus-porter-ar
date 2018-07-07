@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" href="css/onsenui.css">
+	<link rel="stylesheet" href="css/onsen-css-components.min.css">
+	
+	<script src= "js/bundle.js"></script>
+	<script src= "js/aframe-ar.js"></script>
+
+	
+	<script src= "js/aframe-extras.min.js"></script>
+</head>
+<body>
+		<ons-navigator id="myNavigator" page="carouselView.html"></ons-navigator>
+			<template id = "carouselView.html">
+			<ons-page id = "carouselView">
+				<ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
+					<ons-carousel-item fullscreen style="background-color: #085078;">
+		      			<div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+		        			Slide 1
+		      			</div>
+		      		</ons-carousel-item>
+		      		<ons-carousel-item style="background-color: #D38312;">
+		      			<div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+		        			Slide 2
+		      			</div>
+		      		</ons-carousel-item>
+		      		<ons-carousel-item style="background-color: #2EBD1B;">
+		      			<div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
+		        			Slide 3
+		      			</div>
+		      			<p style="text-align: center">
+    						<ons-button id="miboton" onClick="clickCallback()">Click me!</ons-button>
+  						</p>
+		      		</ons-carousel-item>
+				</ons-carousel>
+			</ons-page>
+			</template>
+
+		<template id="arView.html">
+			
+		<ons-page id = "arView" modifier = "transparent">
+			<a-scene embedded arjs='debugUIEnabled: false'>
+
+				<a-entity camera>
+					<a-entity 
+						gesture-cursor
+						cursor
+						position="0 0 -1"
+						geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
+	          			material="color: black; shader: flat"
+					></a-entity>
+				</a-entity>
+
+			</a-scene>
+		</ons-page>
+
+		</template>
+</body>
+</html>

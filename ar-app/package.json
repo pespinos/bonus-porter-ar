@@ -1,0 +1,16 @@
+{
+  "name": "ar-app",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "aframe": "^0.8.2",
+    "aframe-extras": "^4.1.2",
+    "onsenui": "^2.10.2"
+  }
+}
