@@ -11,6 +11,8 @@
 	<script src= "assets/js/aframe-ar.js"></script>
 	<script src= "assets/js/aframe-extras.min.js"></script>
 	<script src= "assets/js/aframe-effects.min.js"></script>
+	<script src="assets/js/aframe-spritesheet-component.min.js"></script>	
+	<script src="components/waitTilLoad.js"></script>	
 
 
 </head>
@@ -65,17 +67,18 @@
 
 					<!-- Assets Manager-->
 					<a-assets>
-						<a-mixin id="env-cube" cube-env-map="path: assets/cubemap/;
+						<a-mixin waiTilLoad="src: waiting; dataUrl: assets/waitingSprite.png ; " id="env-cube" cube-env-map="path: assets/cubemap/;
                         extension: jpg;
                         reflectivity: 0.5;"
                         animation-mixer></a-mixin>
                         <a-mixin id="halfsize" scale ="0.5 0.5 0.5" rotation= "90 0 0"></a-mixin>
 
-						<a-asset-item id="01_entelsecure" src="assets/models/1/1.gltf"></a-asset-item>
-						<a-asset-item id="02_office365" src="assets/models/2/2.gltf"></a-asset-item>
-						<a-asset-item id="03_mdm" src="assets/models/3/3.gltf"></a-asset-item>
-						<a-asset-item id="04_plataformavirtual" src="assets/models/4/4.gltf"></a-asset-item>
-						<a-asset-item id="05_red local administrada" src="assets/models/5/5.gltf"></a-asset-item>
+						<a-asset-item id="01_entelsecure" src="assets/models/1-ECS.gltf"></a-asset-item>
+						<a-asset-item id="02_office365" src="assets/models/2-O365.gltf"></a-asset-item>
+						<a-asset-item id="03_mdm" src="assets/models/3-PVE.gltf"></a-asset-item>
+						<a-asset-item id="04_plataformavirtual" src="assets/models/4-MDM.gltf"></a-asset-item>
+						<a-asset-item id="05_red local administrada" src="assets/models/5-RL.gltf"></a-asset-item>
+						<img id="waiting" src="assets/waitingSprite.png">
 					</a-assets>
 					
 					<!-- Here goes the scene's light -->
