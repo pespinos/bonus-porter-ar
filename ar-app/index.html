@@ -4,58 +4,144 @@
 	<title></title>
 	<link rel="stylesheet" href="assets/css/onsenui.css">
 	<link rel="stylesheet" href="assets/css/onsen-css-components.min.css">
+	<link rel="stylesheet" href="assets/css/solucionesentel.css">
 	
 	<script src= "assets/js/bundle.js"></script>
-	<script src= "assets/js/aframe-ar.js"></script>
 
-	
+	<script src= "assets/js/aframe-ar.js"></script>
 	<script src= "assets/js/aframe-extras.min.js"></script>
+	<script src= "assets/js/aframe-effects.min.js"></script>
+	<script src="assets/js/aframe-spritesheet-component.min.js"></script>	
+	<script src="components/waitTilLoad.js"></script>	
+
+
 </head>
 <body>
 		<ons-navigator id="myNavigator" page="carouselView.html"></ons-navigator>
+
+		<!-- Instructional slides that goes before the arView -->
 			<template id = "carouselView.html">
 			<ons-page id = "carouselView">
 				<ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
 					<ons-carousel-item fullscreen style="background-color: #085078;">
-		      			<div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-		        			Slide 1
+		      			<div class="entel-slide-container">
+		      				<div>
+		      					<img src="assets/slides/paso1texto.png" class = "texto" alt="paso1texto">
+		      				</div>
+							<div >
+								<img src="assets/slides/paso1imagen.png" class= "imagen"  alt="paso1imagen">
+							</div>							
 		      			</div>
 		      		</ons-carousel-item>
-		      		<ons-carousel-item style="background-color: #D38312;">
-		      			<div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-		        			Slide 2
+		      		<ons-carousel-item style="background-color: #085078;">
+		      			<div class="entel-slide-container">
+		      				<div>
+		      					<img src="assets/slides/paso2texto.png" class = "texto" alt="paso1texto">
+		      				</div>
+							<div >
+								<img src="assets/slides/paso2imagen.png" class= "imagen"  alt="paso1imagen">
+							</div>							
 		      			</div>
 		      		</ons-carousel-item>
-		      		<ons-carousel-item style="background-color: #2EBD1B;">
-		      			<div style="text-align: center; font-size: 30px; margin-top: 20px; color: #fff;">
-		        			Slide 3
+		      		<ons-carousel-item style="background-color: #085078;">
+		      			<div class="entel-slide-container">
+		      				<div>
+		      					<img src="assets/slides/paso3texto.png" class = "texto" >
+		      				</div>
+							<div >
+								<img src="assets/slides/paso3imagen.png" class= "imagen"  >
+							</div>
+							<div>
+							<ons-button id="miboton" onClick="clickCallback()">Click me!</ons-button>	
+							</div>							
 		      			</div>
-		      			<p style="text-align: center">
-    						<ons-button id="miboton" onClick="clickCallback()">Click me!</ons-button>
-  						</p>
 		      		</ons-carousel-item>
 				</ons-carousel>
 			</ons-page>
 			</template>
+		
+		<!-- AR view -->
+			<template id="arView.html">	
+			<ons-page id = "arView" modifier = "transparent">
+				<a-scene embedded arjs='debugUIEnabled: false'>
 
-		<template id="arView.html">
-			
-		<ons-page id = "arView" modifier = "transparent">
-			<a-scene embedded arjs='debugUIEnabled: false'>
+					<!-- Assets Manager-->
+					<a-assets>
+						<a-mixin waiTilLoad="src: waiting; dataUrl: assets/waitingSprite.png ; " id="env-cube" cube-env-map="path: assets/cubemap/;
+                        extension: jpg;
+                        reflectivity: 0.5;"
+                        animation-mixer></a-mixin>
+                        <a-mixin id="halfsize" scale ="0.5 0.5 0.5" rotation= "90 0 0"></a-mixin>
 
-				<a-entity camera>
-					<a-entity 
-						gesture-cursor
-						cursor
-						position="0 0 -1"
-						geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
-	          			material="color: black; shader: flat"
-					></a-entity>
-				</a-entity>
+						<a-asset-item id="01_entelsecure" src="assets/models/1-ECS.gltf"></a-asset-item>
+						<a-asset-item id="02_office365" src="assets/models/2-O365.gltf"></a-asset-item>
+						<a-asset-item id="03_mdm" src="assets/models/3-PVE.gltf"></a-asset-item>
+						<a-asset-item id="04_plataformavirtual" src="assets/models/4-MDM.gltf"></a-asset-item>
+						<a-asset-item id="05_red local administrada" src="assets/models/5-RL.gltf"></a-asset-item>
+						<img id="waiting" src="assets/waitingSprite.png">
+					</a-assets>
+					
+					<!-- Here goes the scene's light -->
 
-			</a-scene>
-		</ons-page>
+					<a-light type="ambient" color="#7ed66b" intensity="20" position="0.8232289639410555 2.54013359940121 3.726518860534445"></a-light>
 
-		</template>
+					<a-light type="directional" color="#7ed66b" position="1.198651275435239 1.494435921038039 2.825317943460628" intensity="4" light="color:#3ecaff"></a-light>
+					
+					<!-- Markers go here -->
+
+					<a-marker preset= "custom" url="assets/patterns/01_entelsecure.patt">
+						<!-- Marker's model goes here -->
+						<a-entity 
+						gltf-model="#01_entelsecure"
+						mixin="env-cube ">
+                         ></a-entity>
+					</a-marker>
+
+					<a-marker  preset= "custom" url="assets/patterns/02_office365.patt">
+						<!-- Marker's model goes here -->
+						<a-entity 
+						gltf-model="#02_office365"
+						mixin="env-cube ">
+                         ></a-entity>
+					</a-marker>
+
+					<a-marker  preset= "custom" url="assets/patterns/03_mdm.patt">
+						<!-- Marker's model goes here -->
+						<a-entity 
+						gltf-model="#03_mdm"
+						mixin="env-cube ">
+                         ></a-entity>
+					</a-marker>
+
+					<a-marker  preset= "custom" url="assets/patterns/04_plataforma virtual.patt">
+						<!-- Marker's model goes here -->
+						<a-entity 
+						gltf-model="#04_plataformavirtual"
+						mixin="env-cube ">
+                         ></a-entity>
+					</a-marker>
+
+					<a-marker  preset= "custom" url="assets/patterns/05_red local administrada.patt">
+						<!-- Marker's model goes here -->
+						<a-entity 
+						gltf-model="#05_red local administrada"
+						mixin="env-cube ">
+                         ></a-entity>
+					</a-marker>
+
+					<a-entity camera>
+						<a-entity 
+							gesture-cursor
+							cursor
+							position="0 0 -1"
+							geometry="primitive: ring; radiusInner: 0.01; radiusOuter: 0.015"
+		          			material="color: black; shader: flat"
+						></a-entity>
+					</a-entity>
+
+				</a-scene>
+			</ons-page>
+
+			</template>	</a-marker>
 </body>
 </html>

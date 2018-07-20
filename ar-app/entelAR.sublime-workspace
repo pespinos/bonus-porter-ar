@@ -1,0 +1,780 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"onsen",
+				"onsenUI"
+			],
+			[
+				"c",
+				"carousel"
+			],
+			[
+				"aframe",
+				"aframeExtras"
+			],
+			[
+				"afrem",
+				"aframeExtras"
+			],
+			[
+				"render",
+				"renderStarted"
+			],
+			[
+				"scene",
+				"sceneEl"
+			],
+			[
+				"new",
+				"newMaker"
+			],
+			[
+				"sprit",
+				"spriteAttributes"
+			],
+			[
+				"sprite",
+				"sprite-sheet"
+			],
+			[
+				"a",
+				"appendChild"
+			],
+			[
+				"set",
+				"setAttribute"
+			],
+			[
+				"coll",
+				"collection_status"
+			],
+			[
+				"colle",
+				"collection_dictionary"
+			],
+			[
+				"item",
+				"item_status"
+			],
+			[
+				"status",
+				"status"
+			],
+			[
+				"content",
+				"contents"
+			],
+			[
+				"l",
+				"length"
+			],
+			[
+				"str",
+				"strCollection"
+			],
+			[
+				"double",
+				"onDoubleTap"
+			],
+			[
+				"clo",
+				"closeCrate"
+			],
+			[
+				"crate",
+				"crateList"
+			],
+			[
+				"on",
+				"onSwipe"
+			],
+			[
+				"ar",
+				"arScene"
+			],
+			[
+				"colo",
+				"colors"
+			],
+			[
+				"can",
+				"cantidadTableros"
+			],
+			[
+				"si",
+				"sizeof"
+			],
+			[
+				"min",
+				"minG"
+			],
+			[
+				"mis",
+				"misTableros"
+			],
+			[
+				"mi",
+				"misTableros"
+			],
+			[
+				"prome",
+				"promedio"
+			],
+			[
+				"valo",
+				"valoracionTemp"
+			],
+			[
+				"poc",
+				"posicionMax"
+			],
+			[
+				"tableros",
+				"tableros"
+			],
+			[
+				"tabl",
+				"tablero"
+			],
+			[
+				"co",
+				"completados"
+			],
+			[
+				"cantidad",
+				"cantidadFichas"
+			],
+			[
+				"cantid",
+				"cantidadIntentos"
+			],
+			[
+				"pro",
+				"PromedioCompletadoSimultaneo"
+			],
+			[
+				"fichas",
+				"fichasSacadas"
+			],
+			[
+				"fich",
+				"fichasSacadas"
+			],
+			[
+				"canti",
+				"cantidad"
+			],
+			[
+				"fi",
+				"fichasAsignadas"
+			],
+			[
+				"lle",
+				"LlenarTableroSimultaneo"
+			],
+			[
+				"as",
+				"AsignarFicha"
+			],
+			[
+				"po",
+				"posicionMax"
+			],
+			[
+				"max",
+				"maxValoracion"
+			],
+			[
+				"SIN",
+				"SINSIMBOLO"
+			],
+			[
+				"Si",
+				"SINCOLOR"
+			],
+			[
+				"saca",
+				"Sacarficha"
+			],
+			[
+				"ca",
+				"cantidad"
+			],
+			[
+				"f",
+				"for\tFor Loop"
+			],
+			[
+				"pr",
+				"promedio"
+			],
+			[
+				"casi",
+				"casillaActual"
+			],
+			[
+				"casilla",
+				"casillaActual"
+			],
+			[
+				"re",
+				"return"
+			],
+			[
+				"in",
+				"inc\t#include <…>"
+			],
+			[
+				"SI",
+				"SINSIMBOLO"
+			],
+			[
+				"S",
+				"SINCOLOR"
+			],
+			[
+				"sim",
+				"simbolo"
+			],
+			[
+				"color",
+				"color"
+			],
+			[
+				"colores",
+				"colores"
+			],
+			[
+				"nom",
+				"nombreSimbolo"
+			],
+			[
+				"simb",
+				"simb"
+			],
+			[
+				"nombre",
+				"nombreColor"
+			],
+			[
+				"col",
+				"coloresDisponibles"
+			],
+			[
+				"simbo",
+				"simbolo2"
+			],
+			[
+				"simbolo",
+				"simbolos"
+			],
+			[
+				"t",
+				"typedef"
+			],
+			[
+				"m",
+				"main\tmain()"
+			],
+			[
+				"text-a",
+				"text-align"
+			],
+			[
+				"bo",
+				"boundingParent\tproperty"
+			],
+			[
+				"sca",
+				"ScaleManager\tclass"
+			],
+			[
+				"scal",
+				"scaleMode\tproperty"
+			],
+			[
+				"Inject",
+				"Injectable\tinterface"
+			],
+			[
+				"In",
+				"Injectable\talias"
+			],
+			[
+				"Con",
+				"ControlsService\talias"
+			],
+			[
+				"Event",
+				"EventEmitter\talias"
+			],
+			[
+				"sta",
+				"stage\tproperty"
+			],
+			[
+				"Vi",
+				"ViewChild\talias"
+			],
+			[
+				"fun",
+				"function\tkeyword"
+			],
+			[
+				"conso",
+				"console\tvar"
+			],
+			[
+				"P",
+				"Phaser\talias"
+			],
+			[
+				"di",
+				"div\tTag"
+			],
+			[
+				"d",
+				"div\tTag"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "index.html",
+			"settings":
+			{
+				"buffer_size": 5219,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "components/waitTilLoad.js",
+			"settings":
+			{
+				"buffer_size": 162,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		},
+		{
+			"file": "components/copyShader.js",
+			"settings":
+			{
+				"buffer_size": 1098,
+				"encoding": "UTF-8",
+				"line_ending": "Windows",
+				"name": "AFRAME.registerComponent(\"myeffect\","
+			}
+		},
+		{
+			"file": "main.js",
+			"settings":
+			{
+				"buffer_size": 428,
+				"encoding": "UTF-8",
+				"line_ending": "Windows"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"Package Control: ",
+				"Package Control: Enable Package"
+			],
+			[
+				"Package Control: Git",
+				"Package Control: Install Package"
+			],
+			[
+				"colo",
+				"Color Picker"
+			],
+			[
+				"Package Control: install",
+				"Package Control: Install Package"
+			],
+			[
+				"angular Cli: generate",
+				"Angular CLI: generate class --with Options"
+			],
+			[
+				"serve",
+				"Angular CLI: serve"
+			],
+			[
+				"angularCLI:ge",
+				"Angular CLI: generate component"
+			],
+			[
+				"",
+				"Angular CLI: generate class"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"git",
+				"Angular CLI: generate class"
+			],
+			[
+				"Package Control: ins",
+				"Package Control: Install Package"
+			],
+			[
+				"Package Control: Ins",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 444.0
+	},
+	"console":
+	{
+		"height": 130.0,
+		"history":
+		[
+			"var a = \"g\";",
+			"var a = \"g\"",
+			"cd ",
+			"dir",
+			"ls",
+			"dir",
+			"ls"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": true,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/assets",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/assets/js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/assets/patterns",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/components"
+	],
+	"file_history":
+	[
+		"/C/Users/Jakem/Development/Bonus/Porter/entelcraft/EntelCraft/Assets/Scripts/TabletNetworkManager.cs",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/assets/patterns/05_red local administrada.patt",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/.gitignore",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/assets/js/bundle.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/assets/js/aframe-effects.min.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/assets/js/aframe-ar.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/entelcraft/.gitignore",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/tests/test.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/js/main.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porter-ar/ar-app/js/aframe-ar.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porterar/src/components/postprocessing.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porterar/src/components/collection.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/porterar/assets/data.json",
+		"/C/Users/Jakem/Development/Bonus/Porter/porterar/index.html",
+		"/C/Users/Jakem/Development/Bonus/Porter/porterar/src/lib/animation-mixer.js",
+		"/C/Users/Jakem/AppData/Roaming/Sublime Text 3/Packages/ColorPicker/ColorPicker.sublime-settings",
+		"/C/Users/Jakem/Development/Bonus/Porter/porterar/src/lib/EffectComposer.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/ArTest/src/components/logger.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/ArTest/src/components/arEntel.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/ArTest/src/components/ui-overlay.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/ArTest/src/components/gesture-listener.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/ArTest/src/components/gesture-emiter.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/ArTest/src/clickeable.js",
+		"/C/Users/Jakem/Development/Bonus/Porter/ArTest/mystyle.css",
+		"/C/Users/Jakem/Development/Bonus/Porter/AR/index.html",
+		"/C/Users/Jakem/AppData/Roaming/Sublime Text 3/Packages/Emmet/Emmet.sublime-settings",
+		"/C/Users/Jakem/Documents/simulation/sim.py",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/app.component.html",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/phaser-component/phaserView.component.html",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/game-controls/game-controls.component.html",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/app.module.ts",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/phaser-component/states/MyState.ts",
+		"/C/Users/Jakem/Development/Bonus/newProject/.angular-cli.json",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/header/header.component.html",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/phaser-component/phaserView.component.ts",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/shared/controls-service.service.ts",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/app/app.component.ts",
+		"/C/Users/Jakem/Development/Bonus/newProject/node_modules/@angular/forms/esm2015/forms.js",
+		"/C/Users/Jakem/Development/Bonus/NewProject/src/app/phaser-component/states/myState.ts",
+		"/C/Users/Jakem/Development/Bonus/newProject/tsconfig.json",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/typings.d.ts",
+		"/C/Users/Jakem/Development/Bonus/newProject/src/tsconfig.app.json",
+		"/C/Users/Jakem/Development/Bonus/NewProject/js/phaser.min.js",
+		"/C/Users/Jakem/Development/Angular_course/basics-assignment-2-start/src/main.ts",
+		"/C/Users/Jakem/Development/Angular_course/basics-assignment-1-start/src/app/app.component.css",
+		"/C/Users/Jakem/Development/Angular_course/basics-assignment-1-start/src/app/warning/warning.component.html",
+		"/C/Users/Jakem/Development/Angular_course/basics-assignment-1-start/src/app/warningAlert/warningAlert.component.html",
+		"/C/Users/Jakem/Development/Angular_course/basics-assignment-1-start/src/app/warningAlert/warningAlert.component.ts"
+	],
+	"find":
+	{
+		"height": 27.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"preset",
+			"trackingMethod",
+			"AFRAME.register",
+			"AFRAME.registerComponent",
+			"markersAreaEnabled",
+			"loadMarker",
+			"pattern",
+			"preset"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "index.html",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 5219,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1074,
+								1074
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 270.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "components/waitTilLoad.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 162,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								131,
+								131
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "components/copyShader.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1098,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								461,
+								461
+							]
+						],
+						"settings":
+						{
+							"auto_name": "AFRAME.registerComponent(\"myeffect\",",
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 216.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "main.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 428,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								65,
+								65
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 64.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.doc":
+	{
+		"height": 0.0
+	},
+	"output.exec":
+	{
+		"height": 102.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "Packages/TypeScript/TypeScript.sublime-build",
+	"project": "entelAR.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 332.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

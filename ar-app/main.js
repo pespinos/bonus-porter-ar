@@ -8,4 +8,9 @@ clickCallback = function(event){
 
 document.addEventListener('init', function(event) {
 	var page = event.target;
-	});
+	if(page.id== "arView"){
+		var arView = document.querySelector('#arView');
+		var bg = arView._getBackgroundElement();
+		bg.hidden = true;
+	};
+});
