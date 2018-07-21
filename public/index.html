@@ -12,7 +12,7 @@
 	<script src= "assets/js/aframe-extras.min.js"></script>
 	<script src= "assets/js/aframe-effects.min.js"></script>
 	<script src="assets/js/aframe-spritesheet-component.min.js"></script>	
-	<script src="components/waitTilLoad.js"></script>	
+	<script src="assets/js/waitTilLoad.js"></script>	
 
 
 </head>
@@ -23,36 +23,12 @@
 			<template id = "carouselView.html">
 			<ons-page id = "carouselView">
 				<ons-carousel fullscreen swipeable auto-scroll overscrollable id="carousel">
-					<ons-carousel-item fullscreen style="background-color: #085078;">
-		      			<div class="entel-slide-container">
-		      				<div>
-		      					<img src="assets/slides/paso1texto.png" class = "texto" alt="paso1texto">
-		      				</div>
-							<div >
-								<img src="assets/slides/paso1imagen.png" class= "imagen"  alt="paso1imagen">
-							</div>							
-		      			</div>
-		      		</ons-carousel-item>
+					
 		      		<ons-carousel-item style="background-color: #085078;">
 		      			<div class="entel-slide-container">
-		      				<div>
-		      					<img src="assets/slides/paso2texto.png" class = "texto" alt="paso1texto">
-		      				</div>
-							<div >
-								<img src="assets/slides/paso2imagen.png" class= "imagen"  alt="paso1imagen">
-							</div>							
-		      			</div>
-		      		</ons-carousel-item>
-		      		<ons-carousel-item style="background-color: #085078;">
-		      			<div class="entel-slide-container">
-		      				<div>
-		      					<img src="assets/slides/paso3texto.png" class = "texto" >
-		      				</div>
-							<div >
-								<img src="assets/slides/paso3imagen.png" class= "imagen"  >
-							</div>
+		      				
 							<div>
-							<ons-button id="miboton" onClick="clickCallback()">Click me!</ons-button>	
+							<ons-button id="miboton" onClick="clickCallback()">Empezar</ons-button>	
 							</div>							
 		      			</div>
 		      		</ons-carousel-item>
@@ -63,20 +39,19 @@
 		<!-- AR view -->
 			<template id="arView.html">	
 			<ons-page id = "arView" modifier = "transparent">
-				<a-scene embedded arjs='debugUIEnabled: false'>
+				<a-scene embedded arjs='debugUIEnabled: false' vr-mode-ui="enabled: false">
 
 					<!-- Assets Manager-->
 					<a-assets>
-						<a-mixin waiTilLoad="src: waiting; dataUrl: assets/waitingSprite.png ; " id="env-cube" 
+						<a-mixin waiTilLoad="src: waiting; dataUrl: assets/waitingSprite.png ; " id="gltf-configuration" 
                         position="0 1.053 0" scale= "0.0351 0.0351 0.0351" rotation = "-90 0 0" 
                         animation-mixer></a-mixin>
-                        <a-mixin id="halfsize" scale ="0.5 0.5 0.5" rotation= "90 0 0"></a-mixin>
 
-						<a-asset-item id="01_entelsecure" src="assets/models/1-ECS.gltf"></a-asset-item>
-						<a-asset-item id="02_office365" src="assets/models/2-O365.gltf"></a-asset-item>
-						<a-asset-item id="03_mdm" src="assets/models/3-PVE.gltf"></a-asset-item>
-						<a-asset-item id="04_plataformavirtual" src="assets/models/4-MDM.gltf"></a-asset-item>
-						<a-asset-item id="05_red local administrada" src="assets/models/5-RL.gltf"></a-asset-item>
+						<a-asset-item id="01_entelsecure" src="assets/1-ESC.gltf"></a-asset-item>
+						<a-asset-item id="02_office365" src="assets/2-O365.gltf"></a-asset-item>
+						<a-asset-item id="03_mdm" src="assets/3-PVE.gltf"></a-asset-item>
+						<a-asset-item id="04_plataformavirtual" src="assets/4-MDM.gltf"></a-asset-item>
+						<a-asset-item id="05_red local administrada" src="assets/5-RL.gltf"></a-asset-item>
 						<img id="waiting" src="assets/waitingSprite.png">
 					</a-assets>
 					
@@ -92,10 +67,7 @@
 						<!-- Marker's model goes here -->
 						<a-entity 
 						gltf-model="#01_entelsecure"
-						mixin="env-cube "
-						cube-env-map="path: assets/cubemap;
-                        extension: jpg;
-                        reflectivity: 0.5;" >
+						mixin="gltf-configuration ">
                          ></a-entity>
 					</a-marker>
 
@@ -103,7 +75,7 @@
 						<!-- Marker's model goes here -->
 						<a-entity 
 						gltf-model="#02_office365"
-						mixin="env-cube ">
+						mixin="gltf-configuration ">
                          ></a-entity>
 					</a-marker>
 
@@ -111,7 +83,7 @@
 						<!-- Marker's model goes here -->
 						<a-entity 
 						gltf-model="#03_mdm"
-						mixin="env-cube ">
+						mixin="gltf-configuration ">
                          ></a-entity>
 					</a-marker>
 
@@ -119,7 +91,7 @@
 						<!-- Marker's model goes here -->
 						<a-entity 
 						gltf-model="#04_plataformavirtual"
-						mixin="env-cube">
+						mixin="gltf-configuration">
                          ></a-entity>
 					</a-marker>
 
@@ -127,7 +99,7 @@
 						<!-- Marker's model goes here -->
 						<a-entity 
 						gltf-model="#05_red local administrada"
-						mixin="env-cube ">
+						mixin="gltf-configuration ">
                          ></a-entity>
 					</a-marker>
 
