@@ -9,6 +9,9 @@
 	padding-bottom: 5%;
 }
 .imagen{
-	max-width: 90%;
-	max-height: auto;
+	max-width: 100%;
+	max-height: 65%;
+}
+.arscene{
+	padding-top: 5%;
 }

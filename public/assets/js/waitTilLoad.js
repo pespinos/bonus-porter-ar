@@ -1,4 +1,4 @@
-AFRAME.registerComponent('waitTilLoad',{
+AFRAME.registerComponent('waittilLoad',{
 	scheme: {
 		src: { type: "string"},
 		dataUrl : {type: "string"}

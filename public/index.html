@@ -13,6 +13,7 @@
 	<script src= "assets/js/aframe-effects.min.js"></script>
 	<script src="assets/js/aframe-spritesheet-component.min.js"></script>	
 	<script src="assets/js/waitTilLoad.js"></script>	
+	<script src="assets/js/didload.js"></script>	
 
 
 </head>
@@ -39,12 +40,12 @@
 		<!-- AR view -->
 			<template id="arView.html">	
 			<ons-page id = "arView" modifier = "transparent">
-				<a-scene embedded arjs='debugUIEnabled: false' vr-mode-ui="enabled: false">
+				
+					<a-scene embedded arjs='debugUIEnabled: false' vr-mode-ui="enabled: false">
 
 					<!-- Assets Manager-->
 					<a-assets>
-						<a-mixin waiTilLoad="src: waiting; dataUrl: assets/waitingSprite.png ; " id="gltf-configuration" 
-                        position="0 1.053 0" scale= "0.0351 0.0351 0.0351" rotation = "-90 0 0" 
+						<a-mixin didload id="gltf-configuration"  position="0 1.05 -1.05" scale= "0.07 0.07 0.07" rotation = "-90 0 0" 
                         animation-mixer></a-mixin>
 
 						<a-asset-item id="01_entelsecure" src="assets/1-ESC.gltf"></a-asset-item>
@@ -52,20 +53,23 @@
 						<a-asset-item id="03_mdm" src="assets/3-PVE.gltf"></a-asset-item>
 						<a-asset-item id="04_plataformavirtual" src="assets/4-MDM.gltf"></a-asset-item>
 						<a-asset-item id="05_red local administrada" src="assets/5-RL.gltf"></a-asset-item>
+
 						<img id="waiting" src="assets/waitingSprite.png">
+
+						<img id="iniciando" src="assets/iniciando.png">
 					</a-assets>
 					
 					<!-- Here goes the scene's light -->
 
-					<a-entity light="type:ambient;intensity:1"></a-entity>
-        			<a-entity light="intensity:0.8" position="1 4 0"></a-entity>
-       				<a-entity light="intensity:0.8" position="-1 4 0"></a-entity>
+					<a-entity light="type:ambient;intensity:2.2"></a-entity>
+        			<a-entity light="intensity:0.9" position="1 1 0"></a-entity>
+       				<a-entity light="intensity:0.9" position="-1 1 0"></a-entity>
 					
 					<!-- Markers go here -->
 
 					<a-marker preset= "custom" url="assets/patterns/01_entelsecure.patt">
 						<!-- Marker's model goes here -->
-						<a-entity 
+						<a-entity class="towait"
 						gltf-model="#01_entelsecure"
 						mixin="gltf-configuration ">
                          ></a-entity>
@@ -73,7 +77,7 @@
 
 					<a-marker  preset= "custom" url="assets/patterns/02_office365.patt">
 						<!-- Marker's model goes here -->
-						<a-entity 
+						<a-entity class="towait"
 						gltf-model="#02_office365"
 						mixin="gltf-configuration ">
                          ></a-entity>
@@ -81,7 +85,7 @@
 
 					<a-marker  preset= "custom" url="assets/patterns/03_mdm.patt">
 						<!-- Marker's model goes here -->
-						<a-entity 
+						<a-entity class="towait"
 						gltf-model="#03_mdm"
 						mixin="gltf-configuration ">
                          ></a-entity>
@@ -89,7 +93,7 @@
 
 					<a-marker  preset= "custom" url="assets/patterns/04_plataforma virtual.patt">
 						<!-- Marker's model goes here -->
-						<a-entity 
+						<a-entity class="towait"
 						gltf-model="#04_plataformavirtual"
 						mixin="gltf-configuration">
                          ></a-entity>
@@ -97,16 +101,18 @@
 
 					<a-marker  preset= "custom" url="assets/patterns/05_red local administrada.patt">
 						<!-- Marker's model goes here -->
-						<a-entity 
+						<a-entity class="towait"
 						gltf-model="#05_red local administrada"
 						mixin="gltf-configuration ">
                          ></a-entity>
 					</a-marker>
 
 					<a-entity camera>
+						<a-image id ="waitimage" src="#iniciando" position = " 0 0 -100 " width="48" height="32" didload="selector: .towait ; number: 5;" ></a-image>
 					</a-entity>
 
 				</a-scene>
+			
 			</ons-page>
 
 			</template>	</a-marker>
