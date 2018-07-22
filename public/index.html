@@ -47,14 +47,17 @@
 
 					<!-- Assets Manager-->
 					<a-assets>
-						<a-mixin didload id="gltf-configuration"  position="0 1.05 -0.65" scale= "0.07 0.07 0.07" rotation = "-90 0 0" 
+						<a-mixin didload="selector: .towait" id="gltf-configuration"
                         animation-mixer></a-mixin>
+                        <a-mixin id="position" position="0 1.05 -0.65" scale= "0.07 0.07 0.07" rotation = "-90 0 0" ></a-mixin>
 
 						<a-asset-item id="01_entelsecure" src="assets/1-ESC.gltf"></a-asset-item>
 						<a-asset-item id="02_office365" src="assets/2-O365.gltf"></a-asset-item>
 						<a-asset-item id="03_mdm" src="assets/3-PVE.gltf"></a-asset-item>
 						<a-asset-item id="04_plataformavirtual" src="assets/4-MDM.gltf"></a-asset-item>
 						<a-asset-item id="05_red local administrada" src="assets/5-RL.gltf"></a-asset-item>
+
+						<a-asset-item id="fondo" src="assets/FONDO.gltf"></a-asset-item>
 
 						<img id="waiting" src="assets/waitingSprite.png">
 
@@ -73,40 +76,50 @@
 						<!-- Marker's model goes here -->
 						<a-entity class="towait"
 						gltf-model="#01_entelsecure"
-						mixin="gltf-configuration ">
+						mixin="gltf-configuration position">
                          ></a-entity>
+
+                         <a-entity  gltf-model="#fondo"  mixin="position">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/02_office365.patt">
 						<!-- Marker's model goes here -->
 						<a-entity class="towait"
 						gltf-model="#02_office365"
-						mixin="gltf-configuration ">
+						mixin="gltf-configuration position">
                          ></a-entity>
+
+                         <a-entity  gltf-model="#fondo" mixin="position">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/03_mdm.patt">
 						<!-- Marker's model goes here -->
 						<a-entity class="towait"
 						gltf-model="#03_mdm"
-						mixin="gltf-configuration ">
+						mixin="gltf-configuration position">
                          ></a-entity>
+
+                         <a-entity  gltf-model="#fondo" mixin="position">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/04_plataforma virtual.patt">
 						<!-- Marker's model goes here -->
 						<a-entity class="towait"
 						gltf-model="#04_plataformavirtual"
-						mixin="gltf-configuration">
+						mixin="gltf-configuration position">
                          ></a-entity>
+
+                         <a-entity  gltf-model="#fondo" mixin="position">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/05_red local administrada.patt">
 						<!-- Marker's model goes here -->
 						<a-entity class="towait"
 						gltf-model="#05_red local administrada"
-						mixin="gltf-configuration ">
+						mixin="gltf-configuration position">
                          ></a-entity>
+
+                         <a-entity  gltf-model="#fondo" mixin="position">
 					</a-marker>
 
 					<a-entity camera>

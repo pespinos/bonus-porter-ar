@@ -14,7 +14,7 @@ AFRAME.registerComponent('didload',{
 				setTimeout(function() {
 					console.log("here");
 					this.el.parentNode.removeChild(this.el);
-				}.bind(this), 10000);
+				}.bind(this), 18000);
 				//
 			}
 		}.bind(this);
