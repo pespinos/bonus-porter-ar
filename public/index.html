@@ -48,8 +48,8 @@
 					<!-- Assets Manager-->
 					<a-assets>
 						<a-mixin didload="selector: .towait" id="gltf-configuration"
-                        animation-mixer></a-mixin>
-                        <a-mixin id="position" position="0 1.05 -0.65" scale= "0.07 0.07 0.07" rotation = "-90 0 0" ></a-mixin>
+                        animation-mixer  scale= "0.07 0.07 0.07" ></a-mixin>
+                        <a-mixin id="position" position="0 1.05 -0.65"rotation = "-90 0 0" ></a-mixin>
 
 						<a-asset-item id="01_entelsecure" src="assets/1-ESC.gltf"></a-asset-item>
 						<a-asset-item id="02_office365" src="assets/2-O365.gltf"></a-asset-item>
@@ -79,7 +79,7 @@
 						mixin="gltf-configuration position">
                          ></a-entity>
 
-                         <a-entity  gltf-model="#fondo"  mixin="position">
+                         <a-entity  gltf-model="#fondo"  mixin="position" scale= "0.1 0.1 0.1">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/02_office365.patt">
@@ -89,7 +89,7 @@
 						mixin="gltf-configuration position">
                          ></a-entity>
 
-                         <a-entity  gltf-model="#fondo" mixin="position">
+                         <a-entity  gltf-model="#fondo" mixin="position"  scale= "0.14 0.14 0.14">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/03_mdm.patt">
@@ -99,7 +99,7 @@
 						mixin="gltf-configuration position">
                          ></a-entity>
 
-                         <a-entity  gltf-model="#fondo" mixin="position">
+                         <a-entity  gltf-model="#fondo" mixin="position" scale= "0.1 0.1 0.1">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/04_plataforma virtual.patt">
@@ -109,7 +109,7 @@
 						mixin="gltf-configuration position">
                          ></a-entity>
 
-                         <a-entity  gltf-model="#fondo" mixin="position">
+                         <a-entity  gltf-model="#fondo" mixin="position" scale= "0.1 0.1 0.1">
 					</a-marker>
 
 					<a-marker  preset= "custom" url="assets/patterns/05_red local administrada.patt">
